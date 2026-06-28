@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ray Waweru — Author</title>
+<meta name="description" content="Ray Waweru is a Kenyan author and Computer Science student writing on personal power, human psychology, and self-mastery. Author of We Are All Prisoners and The Authority Within.">
+
+<!-- Schema.org Person markup for Google Knowledge Graph -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ray Waweru",
+  "alternateName": "Ray Kimani Waweru",
+  "description": "Kenyan author and Computer Science student exploring personal power, human psychology, and self-mastery.",
+  "image": "https://commons.wikimedia.org/wiki/File:Ray_Waweru_2026.jpg",
+  "jobTitle": "Author",
+  "nationality": "Kenyan",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Kibabii University"
+  },
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q_REPLACE_WITH_YOUR_ITEM_ID",
+    "https://www.goodreads.com/author/show/REPLACE_WITH_YOUR_GOODREADS_ID",
+    "https://www.amazon.com/author/REPLACE_WITH_YOUR_AMAZON_AUTHOR_SLUG",
+    "https://www.linkedin.com/in/REPLACE_WITH_YOUR_LINKEDIN",
+    "https://x.com/REPLACE_WITH_YOUR_HANDLE",
+    "https://www.instagram.com/REPLACE_WITH_YOUR_HANDLE"
+  ],
+  "author": [
+    {
+      "@type": "Book",
+      "name": "We Are All Prisoners"
+    },
+    {
+      "@type": "Book",
+      "name": "The Authority Within"
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --paper: #F2EDE3;
+    --ink: #1C1A17;
+    --rust: #9C4A2C;
+    --line: #C9BFA8;
+    --muted: #6B6354;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+
+  a { color: var(--rust); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--rust);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* Header / mark */
+  header {
+    padding: 48px 0 0;
+  }
+
+  .mark {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* Hero */
+  .hero {
+    padding: 64px 0 56px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 168px 1fr;
+    gap: 36px;
+    align-items: start;
+  }
+
+  .portrait {
+    width: 168px;
+    height: 168px;
+    border-radius: 2px;
+    object-fit: cover;
+    background: #DCD3BD;
+    border: 1px solid var(--line);
+  }
+
+  .portrait-placeholder {
+    width: 168px;
+    height: 168px;
+    border-radius: 2px;
+    background: #DCD3BD;
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+    padding: 12px;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(36px, 6vw, 52px);
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    font-size: 18px;
+    color: var(--muted);
+    font-style: italic;
+    max-width: 38ch;
+  }
+
+  @media (max-width: 520px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .portrait, .portrait-placeholder { width: 120px; height: 120px; }
+  }
+
+  /* Thesis statement - the signature element */
+  .thesis {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .thesis blockquote {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(22px, 4vw, 30px);
+    line-height: 1.3;
+    font-weight: 500;
+    position: relative;
+    padding-left: 24px;
+    border-left: 3px solid var(--rust);
+  }
+
+  /* Bio */
+  .bio {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 16px;
+    font-family: Georgia, serif;
+  }
+
+  .bio p {
+    font-size: 17px;
+    max-width: 64ch;
+    margin-bottom: 16px;
+  }
+
+  /* Books */
+  .books {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .book {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .book:first-child { border-top: none; padding-top: 0; }
+
+  .book-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .book-desc {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 56ch;
+  }
+
+  .book-link {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  /* Footer / connect */
+  footer {
+    padding: 48px 0 64px;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 15px;
+  }
+
+  .copyright {
+    margin-top: 36px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="mark">Ray Waweru</div>
+</header>
+
+<section class="hero wrap">
+  <div class="hero-grid">
+    <!-- Replace this placeholder div with: <img class="portrait" src="your-photo.jpg" alt="Ray Waweru"> -->
+    <div class="portrait-placeholder">REPLACE WITH<br>&lt;img&gt; TAG<br>+ YOUR PHOTO</div>
+    <div>
+      <h1>Ray Waweru</h1>
+      <p class="tagline">Author &amp; Computer Science student writing on personal power, human psychology, and self-mastery.</p>
+    </div>
+  </div>
+</section>
+
+<section class="thesis wrap">
+  <blockquote>Transformation is not a matter of circumstance, but of decision.</blockquote>
+</section>
+
+<section class="bio wrap">
+  <div class="eyebrow">About</div>
+  <p>Ray Waweru is an author and Computer Science student at Kibabii University whose writing sits at the intersection of human psychology, personal power, and self-mastery.</p>
+  <p>He is the author of <em>We Are All Prisoners</em> and <em>The Authority Within</em>, works that established him as a thoughtful and perceptive voice on the limitations people place on themselves and the freedom that lies beyond them.</p>
+  <p>In <em>The Authority Within</em>, Ray brings the same intellectual depth and clarity to the subject of confidence, delivering a work that is both rigorously honest and profoundly practical. Ray Waweru writes for those who are ready to make the decision to change.</p>
+</section>
+
+<section class="books wrap">
+  <div class="eyebrow">Books</div>
+  <div class="book-list">
+    <div class="book">
+      <div class="book-title">We Are All Prisoners</div>
+      <div class="book-desc">An exploration of the self-imposed limitations people place on themselves, and the freedom that lies beyond them.</div>
+      <div class="book-link"><a href="#">View on Amazon →</a></div>
+    </div>
+    <div class="book">
+      <div class="book-title">The Authority Within</div>
+      <div class="book-desc">A rigorously honest and profoundly practical work on confidence and self-mastery.</div>
+      <div class="book-link"><a href="#">View on Amazon →</a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="eyebrow">Elsewhere</div>
+  <div class="links">
+    <a href="#">Goodreads</a>
+    <a href="#">Wikidata</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">X</a>
+    <a href="#">Instagram</a>
+  </div>
+  <div class="copyright">© 2026 Ray Waweru</div>
+</footer>
+
+</body>
+</html>
