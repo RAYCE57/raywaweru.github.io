@@ -1,4 +1,4 @@
-# raywaweru.github.ioHere's the full code — copy everything below into the GitHub file box:
+# raywaweru.github.ioHere's the full code 
 
 ```html
 <!DOCTYPE html>
